@@ -16,11 +16,12 @@ package controllers
 
 import (
 	"container/list"
+	"samples/WebIM/models"
 	"time"
 
 	"github.com/astaxie/beego"
 	"github.com/gorilla/websocket"
-	"github.com/beego/samples/WebIM/models"
+	//"github.com/beego/samples/WebIM/models"
 )
 
 type Subscription struct {

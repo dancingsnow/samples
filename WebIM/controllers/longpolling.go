@@ -15,7 +15,8 @@
 package controllers
 
 import (
-	"github.com/beego/samples/WebIM/models"
+	//"github.com/beego/samples/WebIM/models"
+	"samples/WebIM/models"
 )
 
 // LongPollingController handles long polling requests.
