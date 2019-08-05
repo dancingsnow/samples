@@ -39,7 +39,7 @@ func (this *WebSocketController) Get() {
 	}
 
 	this.TplName = "websocket.html"
-	this.Data["IsWebSocket"] = true
+	this.Data["IsWebSocket"] = true  //用来匹配返回去的js代码
 	this.Data["UserName"] = uname
 }
 

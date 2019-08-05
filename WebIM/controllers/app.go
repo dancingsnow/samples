@@ -21,6 +21,7 @@ import (
 	"github.com/beego/i18n"
 )
 
+//i18n为让代码实现国际化的插件
 var langTypes []string // Languages that are supported.
 
 func init() {
@@ -91,6 +92,7 @@ func (this *AppController) Join() {
 		return
 	}
 
+	//根据用户选择的通讯方式，进行连接跳转
 	switch tech {
 	case "longpolling":
 		this.Redirect("/lp?uname="+uname, 302)

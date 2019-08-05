@@ -30,6 +30,7 @@ func main() {
 	beego.Info(beego.BConfig.AppName, APP_VER)
 
 	// Register template functions.
+	// 国际化，针对请求浏览器的语言设置(Accept-Language)要展示的语言
 	beego.AddFuncMap("i18n", i18n.Tr)
 
 	beego.Run()
