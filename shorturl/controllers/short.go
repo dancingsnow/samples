@@ -3,8 +3,9 @@ package controllers
 import (
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/cache"
-	"github.com/beego/samples/shorturl/models"
-)
+	"samples/shorturl/models"
+	//"github.com/beego/samples/shorturl/models"
+	)
 
 var (
 	urlcache cache.Cache
@@ -15,8 +16,8 @@ func init() {
 }
 
 type ShortResult struct {
-	UrlShort string
-	UrlLong  string
+	UrlShort string `json:"url_short"`
+	UrlLong  string `json:"url_long"`
 }
 
 type ShortController struct {
